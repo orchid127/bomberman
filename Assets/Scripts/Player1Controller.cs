@@ -3,28 +3,32 @@ using UnityEngine;
 public class Player1Controller : MonoBehaviour
 {
     public float speed;
+    public Rigidbody rigid;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         
     }
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if(Input.GetKey(KeyCode.W)){
-            this.transform.position += Vector3.forward * speed * Time.deltaTime;
+        rigid.linearVelocity = Vector3.zero;
+
+        if (Input.GetKey(KeyCode.W)){
+            rigid.linearVelocity = (Vector3.forward * speed);
         }
 
         if(Input.GetKey(KeyCode.S)){
-            this.transform.position += Vector3.back * speed * Time.deltaTime;
+            rigid.linearVelocity = (Vector3.back * speed);
         }
 
         if(Input.GetKey(KeyCode.A)){
-            this.transform.position += Vector3.left * speed * Time.deltaTime;
+            rigid.linearVelocity = (Vector3.left * speed);
         }
 
         if(Input.GetKey(KeyCode.D)){
-            this.transform.position += Vector3.right * speed * Time.deltaTime;
+            rigid.linearVelocity = (Vector3.right * speed);
         }
     }
 }
