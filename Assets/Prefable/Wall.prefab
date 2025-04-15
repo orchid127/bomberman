@@ -10,7 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2368519302100098114, guid: 02eee3aad9d7f2d449f8f767df0c8b9c, type: 3}
       propertyPath: m_LocalScale.x
-      value: 156.00323
+      value: 9.756372
+      objectReference: {fileID: 0}
+    - target: {fileID: 2368519302100098114, guid: 02eee3aad9d7f2d449f8f767df0c8b9c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.4268558
+      objectReference: {fileID: 0}
+    - target: {fileID: 2368519302100098114, guid: 02eee3aad9d7f2d449f8f767df0c8b9c, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.3402114
       objectReference: {fileID: 0}
     - target: {fileID: 2368519302100098114, guid: 02eee3aad9d7f2d449f8f767df0c8b9c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -54,7 +62,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6777561094501439658, guid: 02eee3aad9d7f2d449f8f767df0c8b9c, type: 3}
       propertyPath: m_Name
-      value: LongCube Variant
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
