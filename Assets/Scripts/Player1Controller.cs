@@ -4,6 +4,7 @@ public class Player1Controller : MonoBehaviour
 {
     public float speed;
     public Rigidbody rigid;
+    public GameObject bomb;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -29,6 +30,10 @@ public class Player1Controller : MonoBehaviour
 
         if(Input.GetKey(KeyCode.D)){
             rigid.linearVelocity = (Vector3.right * speed);
+        }
+
+        if(Input.GetKey(KeyCode.Space)){
+            Instantiate(bomb, this.transform.position, bomb.transform.rotation);
         }
     }
 }
