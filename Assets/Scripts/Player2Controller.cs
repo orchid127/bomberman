@@ -24,7 +24,7 @@ public class Player2Controller : MonoBehaviour
             this.transform.position += Vector3.left * speed * Time.deltaTime;
         }
 
-        if(Input.GetKey(KeyCode.M)){
+        if(Input.GetKey(KeyCode.Semicolon)){
             this.transform.position += Vector3.right * speed * Time.deltaTime;
         }
     }
