@@ -10,7 +10,6 @@ public class Player1Controller : MonoBehaviour
     {
         
     }
-
     // Update is called once per frame
     void FixedUpdate()
     {
