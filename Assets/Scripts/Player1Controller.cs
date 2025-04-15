@@ -1,8 +1,10 @@
 using UnityEngine;
+using System.Collections;
 
 public class Player1Controller : MonoBehaviour
 {
     public float speed;
+    public GameObject bombe;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -26,6 +28,10 @@ public class Player1Controller : MonoBehaviour
 
         if(Input.GetKey(KeyCode.D)){
             this.transform.position += Vector3.right * speed * Time.deltaTime;
+        }
+
+        if(Input.GetKeyDown(KeyCode.Space)){
+            Instantiate(bombe, this.transform.position, bombe.transform.rotation);
         }
     }
 }
