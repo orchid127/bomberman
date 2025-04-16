@@ -52,6 +52,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bomberman2 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2513995868035699680, guid: 06b8901cab4e34646be39e8ab9a59182, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 7871ad3156592714c86389d95d073d9d, type: 2}
+    - target: {fileID: 3214982244257872108, guid: 06b8901cab4e34646be39e8ab9a59182, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 7871ad3156592714c86389d95d073d9d, type: 2}
+    - target: {fileID: 7720051354926412345, guid: 06b8901cab4e34646be39e8ab9a59182, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ff3e70664838d0242ba1ee53c9d3a9c8, type: 2}
     m_RemovedComponents:
     - {fileID: 8588537258470834668, guid: 06b8901cab4e34646be39e8ab9a59182, type: 3}
     m_RemovedGameObjects: []

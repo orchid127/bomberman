@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: -3903004231442145486}
   - component: {fileID: 5141831225175027816}
   m_Layer: 0
-  m_Name: "Ar\xE8ne"
+  m_Name: Old base arena
   m_TagString: Mur
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

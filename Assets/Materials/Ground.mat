@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: "Barri\xE8re"
+  m_Name: Ground
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -28,11 +28,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: c64f0189cbdaecd4389bac3bf4558364, type: 3}
+        m_Texture: {fileID: 2800000, guid: 45e11ca837ab9e64c8cb8a9ae58fc6f3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 12777e4c61fe46e428b158bd7bc2e59b, type: 3}
+        m_Texture: {fileID: 2800000, guid: d98cf5219f5996d479964a1074ada90a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -52,11 +52,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: c64f0189cbdaecd4389bac3bf4558364, type: 3}
+        m_Texture: {fileID: 2800000, guid: 45e11ca837ab9e64c8cb8a9ae58fc6f3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: 4f44727fc29dbd440843c29bb9fdeb30, type: 3}
+        m_Texture: {fileID: 2800000, guid: dea2509f9a4d25646855f7b8fedfe191, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -90,7 +90,7 @@ Material:
     - _AlphaToMask: 0
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
-    - _BumpScale: 2
+    - _BumpScale: 2.3
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
     - _Cull: 2
@@ -108,7 +108,7 @@ Material:
     - _Parallax: 0.005
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Smoothness: 0.463
+    - _Smoothness: 0.651
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -117,8 +117,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.8616352, g: 0.8616352, b: 0.8616352, a: 1}
-    - _Color: {r: 0.8616352, g: 0.8616352, b: 0.8616352, a: 1}
+    - _BaseColor: {r: 0.6415094, g: 0.46743554, b: 0.21181908, a: 1}
+    - _Color: {r: 0.6415094, g: 0.46743548, b: 0.21181905, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
