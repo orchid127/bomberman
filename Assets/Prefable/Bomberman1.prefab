@@ -60,6 +60,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bomberman1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9a8859981d2b6de47b760b625dc51a27, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 2912005838313624870, guid: 9a8859981d2b6de47b760b625dc51a27, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
@@ -99,6 +103,8 @@ MonoBehaviour:
   rigid: {fileID: 8066491693812433982}
   bombP: {fileID: 1014773012672960847, guid: a1293cd2dba847d48a1196bb5ad2c215, type: 3}
   bombRes: 2
+  bombExplose: {fileID: 6777561094501439658, guid: 02eee3aad9d7f2d449f8f767df0c8b9c, type: 3}
+  rayon: 0.5
 --- !u!65 &5899151800620010099
 BoxCollider:
   m_ObjectHideFlags: 0
