@@ -97,7 +97,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 15
   rigid: {fileID: 8066491693812433982}
-  bomb: {fileID: 1014773012672960847, guid: a1293cd2dba847d48a1196bb5ad2c215, type: 3}
+  bombP: {fileID: 1014773012672960847, guid: a1293cd2dba847d48a1196bb5ad2c215, type: 3}
   bombRes: 2
 --- !u!65 &5899151800620010099
 BoxCollider:

@@ -5,7 +5,7 @@ public class Player1Controller : MonoBehaviour
 {
     public float speed;
     public Rigidbody rigid;
-    public GameObject bomb;
+    public GameObject bombP;
     public int bombRes = 2;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -34,14 +34,17 @@ public class Player1Controller : MonoBehaviour
             rigid.linearVelocity = (Vector3.right * speed);
         }
 
-        if(Input.GetKeyDown(KeyCode.Space)){}
-            Instantiate(bomb, this.transform.position, bomb.transform.rotation);
+        if(Input.GetKeyDown(KeyCode.Space) && bombRes > 0){    
+            StartCoroutine(PlaceBomb());
         }
+            
+    }
 
     private IEnumerator PlaceBomb(){
-        Instantiate(bomb, this.transform.position, bomb.transform.rotation);
+        GameObject bomb = Instantiate(bombP,this.transform.position,bombP.transform.rotation);
         bombRes--;
         yield return new WaitForSeconds(2f);
+        Destroy(bomb);
         bombRes++;
     }
 
