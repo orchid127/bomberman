@@ -55,10 +55,10 @@ public class Player1Controller : MonoBehaviour
         GameObject bas = Instantiate(bombExplose, spawnPoss, bombExplose.transform.rotation);
         GameObject gauche = Instantiate(bombExplose, spawnPosq, bombExplose.transform.rotation);
         GameObject droite = Instantiate(bombExplose, spawnPosd, bombExplose.transform.rotation);
-        Destroy(haut,1f);
-        Destroy(bas,1f);
-        Destroy(gauche,1f);
-        Destroy(droite);        
+        Destroy(haut,0.1f);
+        Destroy(bas,0.1f);
+        Destroy(gauche,0.1f);
+        Destroy(droite,0.1f);        
         Destroy(bomb);
         bombRes++;
     }
