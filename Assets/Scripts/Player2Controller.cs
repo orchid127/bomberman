@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class Player1Controller : MonoBehaviour
+public class Player2Controller : MonoBehaviour
 {
     public float speed2;
     public Rigidbody rigid2;
