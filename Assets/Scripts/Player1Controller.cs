@@ -32,12 +32,13 @@ public class Player1Controller : MonoBehaviour
 
         if(Input.GetKey(KeyCode.D)){
             rigid.linearVelocity = (Vector3.right * speed);
-        }
+        }    
+    }
 
+    void Update(){
         if(Input.GetKeyDown(KeyCode.Space) && bombRes > 0){    
             StartCoroutine(PlaceBomb());
         }
-            
     }
 
     private IEnumerator PlaceBomb(){
