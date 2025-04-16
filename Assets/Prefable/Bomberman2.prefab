@@ -50,7 +50,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 591384840384581787, guid: 06b8901cab4e34646be39e8ab9a59182, type: 3}
       propertyPath: m_Name
-      value: Bomberman2 Variant
+      value: Bomberman2
       objectReference: {fileID: 0}
     - target: {fileID: 2513995868035699680, guid: 06b8901cab4e34646be39e8ab9a59182, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -73,6 +73,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 8218694193113535351}
   m_SourcePrefab: {fileID: 100100000, guid: 06b8901cab4e34646be39e8ab9a59182, type: 3}
+--- !u!54 &4288709854248319476 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 8066491693812433982, guid: 06b8901cab4e34646be39e8ab9a59182, type: 3}
+  m_PrefabInstance: {fileID: 6085877771930992074}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &6647424065756261713 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 591384840384581787, guid: 06b8901cab4e34646be39e8ab9a59182, type: 3}
@@ -91,3 +96,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 15
+  rigid: {fileID: 4288709854248319476}
+  bombP: {fileID: 1014773012672960847, guid: a1293cd2dba847d48a1196bb5ad2c215, type: 3}
+  bombRes: 2
