@@ -15,26 +15,30 @@ public class Player1Controller : MonoBehaviour
     {
         
     }
-    // Update is called once per frame
+    
     void FixedUpdate()
     {
         rigid.linearVelocity = Vector3.zero;
 
-        if (Input.GetKey(KeyCode.W)){
+        if (Input.GetKey(KeyCode.W))
+        {
             rigid.linearVelocity = (Vector3.forward * speed);
         }
 
-        if(Input.GetKey(KeyCode.S)){
+        if (Input.GetKey(KeyCode.S))
+        {
             rigid.linearVelocity = (Vector3.back * speed);
         }
 
-        if(Input.GetKey(KeyCode.A)){
+        if (Input.GetKey(KeyCode.A))
+        {
             rigid.linearVelocity = (Vector3.left * speed);
         }
 
-        if(Input.GetKey(KeyCode.D)){
+        if (Input.GetKey(KeyCode.D))
+        {
             rigid.linearVelocity = (Vector3.right * speed);
-        }    
+        }
     }
 
     void Update(){

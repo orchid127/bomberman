@@ -171,11 +171,43 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bomberman1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8588537258470834668, guid: 06b8901cab4e34646be39e8ab9a59182, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 591384840384581787, guid: 06b8901cab4e34646be39e8ab9a59182, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 92591712}
   m_SourcePrefab: {fileID: 100100000, guid: 06b8901cab4e34646be39e8ab9a59182, type: 3}
+--- !u!1 &92591710 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 591384840384581787, guid: 06b8901cab4e34646be39e8ab9a59182, type: 3}
+  m_PrefabInstance: {fileID: 92591709}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &92591711 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 8066491693812433982, guid: 06b8901cab4e34646be39e8ab9a59182, type: 3}
+  m_PrefabInstance: {fileID: 92591709}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &92591712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92591710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ea9d7322059f53468935db16f460de1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  rigid: {fileID: 92591711}
+  bombP: {fileID: 1014773012672960847, guid: a1293cd2dba847d48a1196bb5ad2c215, type: 3}
+  bombRes: 2
+  bombExplose: {fileID: 6777561094501439658, guid: 02eee3aad9d7f2d449f8f767df0c8b9c, type: 3}
+  rayon: 0
 --- !u!1 &736157074
 GameObject:
   m_ObjectHideFlags: 0
@@ -486,11 +518,41 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bomberman2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8218694193113535351, guid: 78bc7d405c90d9f4fb3ef2961bbbc333, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6647424065756261713, guid: 78bc7d405c90d9f4fb3ef2961bbbc333, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1749813867}
   m_SourcePrefab: {fileID: 100100000, guid: 78bc7d405c90d9f4fb3ef2961bbbc333, type: 3}
+--- !u!1 &1749813865 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6647424065756261713, guid: 78bc7d405c90d9f4fb3ef2961bbbc333, type: 3}
+  m_PrefabInstance: {fileID: 1749813864}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &1749813866 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 4288709854248319476, guid: 78bc7d405c90d9f4fb3ef2961bbbc333, type: 3}
+  m_PrefabInstance: {fileID: 1749813864}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1749813867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749813865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6131c5ea283db5d438f13154eeed0349, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed2: 0
+  rigid2: {fileID: 1749813866}
+  bomb: {fileID: 1014773012672960847, guid: a1293cd2dba847d48a1196bb5ad2c215, type: 3}
+  bombRes2: 2
 --- !u!1001 &4092665892713051563
 PrefabInstance:
   m_ObjectHideFlags: 0

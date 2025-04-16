@@ -3,49 +3,57 @@ using System.Collections;
 
 public class Player2Controller : MonoBehaviour
 {
-    public float speed;
-    public Rigidbody rigid;
-    public GameObject bombP;
-    public int bombRes = 2;
+    public float speed2;
+    public Rigidbody rigid2;
+    public GameObject bomb;
+    public int bombRes2 = 2;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+
     }
-    // Update is called once per frame
+
     void FixedUpdate()
     {
-        rigid.linearVelocity = Vector3.zero;
+        rigid2.linearVelocity = Vector3.zero;
 
-        if (Input.GetKey(KeyCode.O)){
-            rigid.linearVelocity = (Vector3.forward * speed);
+        if (Input.GetKey(KeyCode.W))
+        {
+            rigid2.linearVelocity = Vector3.forward * speed2;
         }
 
-        if(Input.GetKey(KeyCode.L)){
-            rigid.linearVelocity = (Vector3.back * speed);
+        if (Input.GetKey(KeyCode.S))
+        {
+            rigid2.linearVelocity = Vector3.back * speed2;
         }
 
-        if(Input.GetKey(KeyCode.K)){
-            rigid.linearVelocity = (Vector3.left * speed);
+        if (Input.GetKey(KeyCode.A))
+        {
+            rigid2.linearVelocity = Vector3.left * speed2;
         }
 
-        if(Input.GetKey(KeyCode.Semicolon)){
-            rigid.linearVelocity = (Vector3.right * speed);
-        }    
-    }
-
-    void Update(){
-        if(Input.GetKeyDown(KeyCode.Return) && bombRes > 0){
-            StartCoroutine(PlaceBomb());
+        if (Input.GetKey(KeyCode.D))
+        {
+            rigid2.linearVelocity = Vector3.right * speed2;
         }
     }
 
-    private IEnumerator PlaceBomb(){
-        GameObject bomb = Instantiate(bombP,this.transform.position,bombP.transform.rotation);
-        bombRes--;
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(bomb, this.transform.position, bomb.transform.rotation);
+        }
+    }
+
+    private IEnumerator PlaceBomb()
+    {
+        Instantiate(bomb, this.transform.position, bomb.transform.rotation);
+        bombRes2--;
         yield return new WaitForSeconds(2f);
-        Destroy(bomb);
-        bombRes++;
+        bombRes2++;
     }
 
 }
