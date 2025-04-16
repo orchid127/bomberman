@@ -1,10 +1,12 @@
 using UnityEngine;
+using System.Collections;
 
 public class Player1Controller : MonoBehaviour
 {
     public float speed;
     public Rigidbody rigid;
     public GameObject bomb;
+    public int bombRes = 2;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -32,8 +34,15 @@ public class Player1Controller : MonoBehaviour
             rigid.linearVelocity = (Vector3.right * speed);
         }
 
-        if(Input.GetKey(KeyCode.Space)){
+        if(Input.GetKeyDown(KeyCode.Space)){}
             Instantiate(bomb, this.transform.position, bomb.transform.rotation);
         }
+
+    private IEnumerator PlaceBomb(){
+        Instantiate(bomb, this.transform.position, bomb.transform.rotation);
+        bombRes--;
+        yield return new WaitForSeconds(2f);
+        bombRes++;
     }
+
 }
